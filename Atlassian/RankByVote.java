@@ -1,7 +1,7 @@
 package Atlassian;
 import java.util.*;
 import java.util.stream.Collectors;
-
+//https://leetcode.com/problems/rank-teams-by-votes/
 public class RankByVote {
 
 

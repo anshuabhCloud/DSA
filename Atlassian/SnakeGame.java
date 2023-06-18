@@ -46,13 +46,8 @@ class SnakeGame {
             int[] tailPosition = snake.removeLast();
             board[tailPosition[0]][tailPosition[1]] = 0;
         } else if (foodPosition < foods.length) {
-//            if (board[foods[foodPosition][0]][foods[foodPosition][1]] == -1)
-//                return -1;
             board[foods[foodPosition][0]][foods[foodPosition][1]] = 1;
             foodPosition++;
-//            if (foodPosition == foods.length) {
-//                foodPosition = 0;
-//            }
 
         }
         if (board[nextPosition[0]][nextPosition[1]] == -1)

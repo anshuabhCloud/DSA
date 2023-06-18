@@ -7,6 +7,18 @@ public class RankByVote {
 
     public static void main(String[] args) {
         System.out.println(rankByVote(new String[]{"ABC","ACB","ABC","ACB","ACB"}));
+        int[] input = new int[]{10,1,2,3,4,5,6};
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(7);
+        list.add(3);
+        list.sort((a,b)->a-b);
+        list.stream().forEach(t -> System.out.println(t));
+        list.stream().map(Math::sqrt).collect(Collectors.toList());
+        System.out.println(input);
+        //wo wala mock remove kerdo ,test fail
+        //mera 
     }
     public static String rankByVote(String[] votes)
     {
